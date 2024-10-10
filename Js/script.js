@@ -1,7 +1,7 @@
 function konversi_celcius(){
     let c = document.getElementById("celcius").value;
     if (c == ""){
-        alert("Form tidak boleh ada yang kosong");
+        alert("Nilai Celcius tidak boleh ada yang kosong");
         return;
     }
 
@@ -17,7 +17,7 @@ function konversi_celcius(){
 function konversi_fahrenheit(){
     let f = document.getElementById("fahrenheit").value;
     if (f == ""){
-        alert("Form tidak boleh ada yang kosong");
+        alert("Nilai Fahrenheit tidak boleh ada yang kosong");
         return;
     }
 
