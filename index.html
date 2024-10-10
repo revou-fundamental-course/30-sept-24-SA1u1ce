@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Coding</title>
+    <link rel="stylesheet" href="Css\Style.css">
+</head>
+<body>
+    <header class="header">
+        <h1> Kalkulator konversi suhu celcius dan farenheit  </h1>
+    </header> 
+    <hr>
+    
+    <main>
+        <section class="section-form">
+            <aside class="aside-form">
+                <form class="form-format">
+                    <h1> Masukkan suhu derajat <span class="span">celsius</span> ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk fahrenheit</h1>
+                    <label for="fahrenheit"> celcius (&deg;S) </label>
+                    <input type="number" id="celcius" name="celcius">
+                    <input type="button" value="konversi" onclick="konversi_celcius()">
+                    <input type="button" value="Reset" onclick="reset()">
+                    <label for="fahrenheit"> Fahrenheit(&deg;F) </label>
+                    <input type="number" id="hfahrenheit" name="hfahrenheit" readonly>
+                    Cara Kalkulasi
+                    <textarea name="calc" id="calc" readonly> </textarea>
+                </form>
+                <article class="form-img">
+                    <img src="img\Celcisus Fahrenheit.png" height="300px" width="600px"> 
+                </article>
+            </aside>
+    
+            <aside class="aside-form" id="">
+                <form class="form-format">
+                    <h1> Masukkan suhu derajat <span class="span">Fahrenheit</span> ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk fahrenheit</h1>
+                    <label for="f"> Fahrenheit (&deg;F) </label>
+                    <input type="number" id="fahrenheit" name="fahrenheit">
+                    <input type="button" value="konversi" onclick="konversi_fahrenheit()">
+                    <input type="button" value="Reset" onclick="reset()">
+                    <label for="celcius"> celcius(&deg;S) </label>
+                    <input type="number" id="hcelcius" name="hcelcius" disabled>
+                    Cara Kalkulasi
+                    <textarea name="calf" id="calf"> </textarea>
+                </form>
+                <article class="form-img">
+                    <img src="img\fahrenheit ke celcius2.png" height="300px" width="600px"> 
+                </article>
+            </aside>
+        </section>
+    </main>
+    <script src="Js\script.js"></script>
+</body>
+</html>
